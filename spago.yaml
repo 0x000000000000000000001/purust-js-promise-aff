@@ -11,7 +11,25 @@ package:
     main: Test.Main
     dependencies:
       - assert
+      - console
+      - control
+      - datetime
+      - effect
+      - either
+      - exceptions
+      - foreign
+      - foreign-object
+      - integers
+      - maybe
+      - newtype
+      - parallel
+      - prelude
+      - refs
+      - transformers
 workspace:
+  backend:
+    cmd: ../purust/bin/purust
+    args: [--main, Test.Main, --source, output, --out, output/purust_output, --threaded]
   packageSet:
     registry: 77.7.0
   extraPackages:
