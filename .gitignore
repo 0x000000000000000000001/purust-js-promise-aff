@@ -6,3 +6,6 @@ output.bak/
 /src/.webpack.js
 .spago
 .psc-ide-port
+.purmeta/
+.purs-repl
+.DS_Store
